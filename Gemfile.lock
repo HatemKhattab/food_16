@@ -55,6 +55,8 @@ GEM
     execjs (2.6.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    haml (4.0.7)
+      tilt
     heroku (3.42.27)
       heroku-api (= 0.3.23)
       launchy (= 2.4.3)
@@ -175,6 +177,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.0.0)
+  haml (~> 4.0.5)
   heroku
   jbuilder (~> 2.0)
   jquery-rails
