@@ -1,4 +1,4 @@
-class RecipesController < ApplicationController
+ class RecipesController < ApplicationController
   before_action :find_recipe, only: [:show, :edit, :update, :destroy ]
 
   def index
