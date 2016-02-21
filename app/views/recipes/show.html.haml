@@ -12,16 +12,20 @@
       #ingredients
         %h2 Ingredients
         %ul
-          = @recipe.ingredients.each do |ingredient|
+          - @recipe.ingredients.each do |ingredient|
             %li= ingredient.name
 
     .col-md-6
-      #direction
+      #directions
         %h2 Directions
         %ul
-          = @recipe.directions.each do |direction|
+          - @recipe.directions.each do |direction|
             %li= direction.step
 
-=link_to "Back", root_path, class: "btn btn-default"
-=link_to "Edit", edit_recipe_path, class: "btn btn-default"
-=link_to "Delete", recipe_path, method: :delete, data:{confirm: "Are you sure?" }, class: "btn btn-default"
+  .row
+    .col-md-12
+      =link_to "Back", root_path, class: "btn btn-default"
+      =link_to "Edit", edit_recipe_path, class: "btn btn-default"
+      =link_to "Delete", recipe_path, method: :delete, data:{confirm: "Are you sure?" },
+      class: "btn btn-default"
+
