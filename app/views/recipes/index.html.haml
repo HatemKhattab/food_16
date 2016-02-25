@@ -5,5 +5,8 @@
         .recipe
           .image_wrapper
             = link_to recipe do
-              = image_tag recipe.image.url(:medium)
+              -if recipe.image.present?
+                = image_tag recipe.image.url(:medium)
+              -else
+                %img(src="http://wwwreplacements.com/images/no_image.jpg" class="recipe_image")
           %h2= link_to recipe.title, recipe
