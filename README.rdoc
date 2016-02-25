@@ -1,10 +1,9 @@
 == README
 
-Follwing Mackenziechild tutorial Recipe Box. 
+Follwing Mackenziechild tutorial Recipe Box.
 
 
 
-* ...
 
 
 You can visit the site on :
