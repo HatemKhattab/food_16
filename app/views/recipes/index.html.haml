@@ -1,12 +1,13 @@
 -@recipe.each_slice(3) do |recipes|
   .row
-    - recipes.each do |recipe|
-      .col-md-4
-        .recipe
-          .image_wrapper
-            = link_to recipe do
-              -if recipe.image.present?
-                = image_tag recipe.image.url(:medium)
-              -else
-                %img(src="http://wwwreplacements.com/images/no_image.jpg" class="recipe_image")
-          %h2= link_to recipe.title, recipe
+    .col-md-10.col-md-offset-1
+      - recipes.each do |recipe|
+        .col-md-4
+          .recipe
+            .image_wrapper
+              = link_to recipe do
+                -if recipe.image.present?
+                  = image_tag recipe.image.url(:medium)
+                -else
+                  %img(src="http://wwwreplacements.com/images/no_image.jpg" class="recipe_image")
+            %h2= link_to recipe.title, recipe
