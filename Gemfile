@@ -9,7 +9,7 @@ gem 'rails_12factor'
 gem 'heroku'
 gem 'haml', '~> 4.0.5'
 gem 'simple_form', '~> 3.0.2'
-gem 'paperclip', '~> 4.2'
+gem 'paperclip'
 gem 'cocoon', '~> 1.2.6'
 gem 'bootstrap-sass', '~> 3.2.0.2'
 gem 'sass-rails', '~> 4.0.3'
@@ -19,7 +19,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'devise'
-gem 'aws-sdk', '~> 2.2.20'
+gem 'aws-sdk'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
